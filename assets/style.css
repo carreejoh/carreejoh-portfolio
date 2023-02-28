@@ -1,0 +1,49 @@
+* {
+    font-family: 'Monaco', monospace;
+}
+
+:root {
+    --darkest: rgb(10, 180, 152);
+    --medium: rgb(107, 224, 107);
+    --lightest: lightblue;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--darkest);
+    border: solid, 20px var(--darkest);
+    justify-content: space-between;
+    height: 80px;
+}
+
+header h1 {
+    padding-left: 5%;
+    font-size: 40px;
+}
+
+header nav {
+    padding-right: 5%;
+}
+
+header a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 2px;
+    border-width: 2px;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+
+}
+
+header a:hover {
+    background-color: black;
+    color: var(--darkest);
+}
+
+body {
+    background-color: var(--lightest);
+}
