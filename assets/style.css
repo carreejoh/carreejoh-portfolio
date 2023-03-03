@@ -4,46 +4,225 @@
 
 :root {
     --darkest: rgb(10, 180, 152);
-    --medium: rgb(107, 224, 107);
+    --medium: rgb(160, 255, 160);
     --lightest: lightblue;
 }
 
+/* Start of header only code */
+
 header {
-    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
-    background-color: var(--darkest);
-    border: solid, 20px var(--darkest);
+    display: flex;
     justify-content: space-between;
-    height: 80px;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--darkest) , var(--medium));
+    height: 14%;
+    border: solid 3px black;  
 }
 
 header h1 {
     padding-left: 5%;
+    padding-right: 5px;
     font-size: 40px;
+    background-color: var(--medium);
+    height: 14%;
+    border-style: solid;
+    border-width: 3px 3px 3px 0px;
+    border-radius: 0px 10px 10px 0px;
 }
 
 header nav {
     padding-right: 5%;
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: right;
 }
 
 header a {
-    font-size: 20px;
+    font-size: 24px;
     color: black;
     text-decoration: none;
-    padding: 2px;
-    border-width: 2px;
-    border: solid;
-    border-color: black;
+    padding: 3px;
+    border: solid 3px black;
     border-radius: 10px;
-
+    margin-left: 5px;
+    background-color: var(--medium);
 }
 
 header a:hover {
     background-color: black;
-    color: var(--darkest);
+    color: var(--medium);
 }
+
+/* End of header only code */
 
 body {
     background-color: var(--lightest);
+}
+
+/*About Me */
+
+.aboutme  {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    align-items: center;
+}
+
+.aboutme p {
+    height: 100%;
+    width: 50%;
+    border: solid 3px black;
+    border-radius: 10px;
+    background-color: var(--medium);
+    padding: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .projectsclass img {
+    width: 60%;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutme  {
+    display: flex;
+    justify-content: left;
+    padding-top: 8%;
+}
+
+.aboutme h1 {
+    padding-left: 20%;
+    border: solid black;
+    border-width: 0px 3px 0px 0px;
+    padding-right: 5px;
+    margin-right: 20%;
+}
+
+.aboutme p {
+    width: 45%;
+    border: solid 3px black;
+    border-radius: 10px;
+    background-color: var(--medium);
+    padding: 4px;
+}
+
+.projectsclassdiv {
+    margin-top: 30px;
+}
+
+
+
+.projectsclass {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.projectsclassdiv section {
+    justify-content: space-between;
+}
+
+.projectsclass h1 {
+    padding-left: 20%;
+}
+
+.projectsclass img {
+    width: 60%;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) and (min-width: 0px){
+    header a {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px)  {
+    .aboutme  
+    h1 {
+        margin-right: 20%;
+    }
+    section img {
+        display: hidden;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .aboutme p {
+        width: 80%;
+    }
 }
