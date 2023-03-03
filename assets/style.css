@@ -118,8 +118,10 @@ body {
 
 /* Beginning of projects */
 
+/* Beginning of large project */
+
 .asideprojects {
-    flex: 3;
+    flex: 2;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -138,9 +140,10 @@ body {
 .asideprojects h2 {
     border: var(--defaultborder);
     border-radius: 10px;
-    width: 180px;
-    margin-left: 25%;
+    width: 70%;
+    margin-left: 15%;
     background-color: var(--medium);
+    margin-top: 16%;
 }
 
 .projects {
@@ -154,7 +157,12 @@ body {
 .projects img {
     border: var(--defaultborder);
     border-radius: 10px;
+    transition: all .2s ease-in-out; 
 }
+
+.projects img:hover {
+    transform: scale(1.03);
+} 
 
 .projects p {
     width: 80%;
@@ -164,6 +172,39 @@ body {
 #horiseonimg {
     width: 80%;
 }
+
+
+/* End of large porject */
+
+/* Smaller projects */
+
+.smallprojectflex {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.projectssmall {
+    width: 45%;
+    border: var(--defaultborder);
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--medium);
+
+}
+
+.projectssmall img {
+    width: 50%;
+}
+
+
+
+
+
+
 
 
 @media screen and (max-width: 800px){
