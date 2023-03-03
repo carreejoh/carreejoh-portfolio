@@ -21,6 +21,7 @@ header {
     background-image: linear-gradient(to right, var(--darkest) , var(--medium));
     height: 14%;
     border: solid 3px black;  
+    border-radius: 10px;
 }
 
 header h1 {
@@ -61,19 +62,24 @@ header a:hover {
 
 /* End of header only code */
 
+/*body {
+    background-image:url("C:\Users\carter johnson\bootcamp\classwork\carreejoh-portfolio\assets\images\backgroundcode.png") fixed center;
+} */
+
 body {
     background-color: var(--lightest);
 }
 
-/*About Me */
+/* Start of About Me */
 
 .aboutme  {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--darkest);
+    background-image: linear-gradient(var(--medium), rgb(9, 81, 175));
     margin-top: 2%;
     border: var(--defaultborder);
+    border-radius: 10px;
 }
 
 .aboutme div{
@@ -84,6 +90,10 @@ body {
 
 .aboutme h1 {
     margin-left: 8%; 
+    border: var(--defaultborder);
+    border-radius: 10px;
+    background-color: var(--medium);
+    width: 190px;
 }
 
 .aboutme p {
@@ -104,6 +114,56 @@ body {
     margin-right: 8%;
 }
 
+/* End of about me section */
+
+/* Beginning of projects */
+
+.asideprojects {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+} 
+
+.asideprojects aside {
+    background-image: linear-gradient(rgb(9, 81, 175), var(--medium));;
+    width: 20%;
+    border: var(--defaultborder);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.asideprojects h2 {
+    border: var(--defaultborder);
+    border-radius: 10px;
+    width: 180px;
+    margin-left: 25%;
+    background-color: var(--medium);
+}
+
+.projects {
+    width: 75%;
+    border: var(--defaultborder);
+    border-radius: 10px;
+    background-color: var(--medium);
+    text-align: center;
+}
+
+.projects img {
+    border: var(--defaultborder);
+    border-radius: 10px;
+}
+
+.projects p {
+    width: 80%;
+    margin-right: 5%;
+}
+
+#horiseonimg {
+    width: 80%;
+}
 
 
 @media screen and (max-width: 800px){
